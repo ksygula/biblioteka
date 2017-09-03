@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+
+{% stylesheets
+    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
+    'css/style.css'
+    'css/panel.css'
+    filter='cssrewrite' output='css/compiled/app.css' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
+<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+{% javascripts
+    'js/jquery.min.js'
+    'js/panel.js'
+    'js/bootstrap.min.js'
+    output='js/compiled/app.js' %}
+    <script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% endblock %}
+{% block body %}
+
+    <div class="container">
+        <h1 style="text-align: center; margin: 40px;">Pomoc</h1>
+        <div class="row">
+                <div class="panel panel-primary">
+                    <div class="panel-heading clickable">
+                        <h3 class="panel-title">
+                            Rejestracja
+                        </h3>
+                        <span class="pull-right "><i class="glyphicon glyphicon-minus"></i></span>
+                    </div>
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis risus nec sapien porta placerat. Ut tempor vitae lectus vel tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed aliquam libero. Proin tempor feugiat posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras dapibus vehicula libero sit amet lobortis.
+                        </br></br>
+                        Mauris mi purus, hendrerit sit amet neque id, vestibulum ultricies mauris. Vestibulum at diam libero. Sed auctor in neque quis porta. Maecenas vel eros quam. Morbi malesuada mi quam, et finibus elit placerat et. Maecenas turpis odio, hendrerit vitae pharetra nec, scelerisque vehicula massa. Integer sed facilisis odio. Cras congue sed felis at ullamcorper. Mauris fringilla neque posuere nunc tempor dictum. Donec tincidunt tincidunt orci id auctor. 
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="panel panel-primary">
+                    <div class="panel-heading clickable">
+                        <h3 class="panel-title">
+                            Logowanie
+                        </h3>
+                        <span class="pull-right "><i class="glyphicon glyphicon-minus"></i></span>
+                    </div>
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis risus nec sapien porta placerat. Ut tempor vitae lectus vel tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed aliquam libero. Proin tempor feugiat posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras dapibus vehicula libero sit amet lobortis. 
+                    </div>
+                </div>
+        </div>
+        
+        <div class="row">
+                <div class="panel panel-primary">
+                    <div class="panel-heading clickable">
+                        <h3 class="panel-title">
+                            Wyszukiwanie
+                        </h3>
+                        <span class="pull-right "><i class="glyphicon glyphicon-minus"></i></span>
+                    </div>
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis risus nec sapien porta placerat. Ut tempor vitae lectus vel tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed aliquam libero. Proin tempor feugiat posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras dapibus vehicula libero sit amet lobortis. 
+                    </div>
+                </div>
+        </div>
+        
+        <div class="row">
+                <div class="panel panel-primary">
+                    <div class="panel-heading clickable">
+                        <h3 class="panel-title">
+                            Zamówienia
+                        </h3>
+                        <span class="pull-right "><i class="glyphicon glyphicon-minus"></i></span>
+                    </div>
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis risus nec sapien porta placerat. Ut tempor vitae lectus vel tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed aliquam libero. Proin tempor feugiat posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras dapibus vehicula libero sit amet lobortis. 
+                    </div>
+                </div>
+        </div>
+        
+    </div>
+
+{% endblock body %}
